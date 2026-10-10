@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "ghosthandcam",
+	"version": "${version}",
+	"name": "Ghost Hand Cam",
+	"description": "While your camera is detached (Freecam, spectate view), right-click usable blocks like chests, doors, levers and buttons straight through walls. On worlds you host, your body can be up to 64 blocks from the camera while it is detached. Client-side only.",
+	"authors": ["skat"],
+	"license": "CC0-1.0",
+	"environment": "client",
+	"mixins": [
+		{
+			"config": "ghosthandcam.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25"
+	}
+}
